@@ -14,12 +14,12 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - FriendlyBullets
+  - EnemyBullets
+  - FriendlyShips
+  - EnemyShips
+  - FriendlyBase
+  - EnemyBase
   - 
   - 
   - 
