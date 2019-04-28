@@ -50,7 +50,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 10, y: 10, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1855497677453994404
 MonoBehaviour:
@@ -68,8 +68,8 @@ MonoBehaviour:
   ShipTarget: {fileID: 0}
   HomeBase: {fileID: 0}
   Health: 1
-  shotCount: 8
-  ShotsPerSecond: 5
+  shotCount: 10
+  ShotsPerSecond: 6
   ReloadTime: 1
   RangeToShoot: 50
   Barrel: {fileID: 0}
@@ -89,11 +89,11 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
-  mass: 1
+  mass: 15.4
   damping: 0.06
   banking: 0.79
-  maxSpeed: 50
-  maxForce: 100
+  maxSpeed: 150
+  maxForce: 200
 --- !u!114 &6450156493086300529
 MonoBehaviour:
   m_ObjectHideFlags: 0

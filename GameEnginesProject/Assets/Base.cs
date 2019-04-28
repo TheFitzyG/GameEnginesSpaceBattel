@@ -4,6 +4,7 @@ using System.Xml.Schema;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Assertions.Comparers;
+using UnityEngine.UI;
 using UnityEngine.XR.WSA.WebCam;
 
 
@@ -21,6 +22,8 @@ public class Base : MonoBehaviour {
 
      public Base EnemyBase;
     // private Transform[] EnemyBaseTargetPoints;
+
+     public Slider HealthBar;
 
      void Start() {
 
@@ -66,6 +69,8 @@ public class Base : MonoBehaviour {
           }
           
           Think();
+
+          HealthBar.value = Health;
 
      }
 

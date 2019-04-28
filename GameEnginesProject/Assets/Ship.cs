@@ -101,6 +101,27 @@ public class Ship : MonoBehaviour {
 
         }
 
+        if (pursuing) {
+
+
+
+            if (currentTarget == null || Enemies.Count < 1) {
+
+                pursuing      = false;
+                AR.enabled    = true;
+                PR.enabled    = false;
+                currentTarget = BaseTarget;
+
+
+
+            }
+
+            // if (Vector3.Distance()
+
+
+
+        }
+
         if (Vector3.Distance(transform.position, currentTarget.position) < RangeToShoot) {
 
 
@@ -127,26 +148,7 @@ public class Ship : MonoBehaviour {
 
         }
 
-        if (pursuing) {
-
-
-            
-            if (currentTarget == null) {
-
-                pursuing = false;
-                AR.enabled = true;
-                PR.enabled = false;
-                currentTarget = BaseTarget;
-
-
-
-            }
-            
-           // if (Vector3.Distance()
-            
-
-
-        }
+       
 
 
 

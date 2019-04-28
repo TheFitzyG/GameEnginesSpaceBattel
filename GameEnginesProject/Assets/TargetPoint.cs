@@ -9,17 +9,26 @@ public class TargetPoint : MonoBehaviour {
 
      private void Start() {
          myBase = GetComponentInParent<Base>();
-          
-          
-          
+
+          if (myBase == null) {
+
+               Debug.LogError("No Base found!");
+               
+          }
+
      }
 
 
-     private void OnCollisionEnter(Collision other) {
+     private void OnTriggerEnter(Collider other) {
 
-          myBase.Health--;
-          
-          Destroy(other.gameObject);
+        //  Debug.Log("Hit");
+          if (other.CompareTag("Bullet")) {
+
+
+               myBase.Health--;
+
+               Destroy(other.gameObject);
+          }
 
      }
 
